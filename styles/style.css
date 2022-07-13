@@ -1,0 +1,260 @@
+/*========================geral==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    font-family: Share Tech Mono;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #34344e;
+}
+
+.titulo{
+    font-size: 40px;
+    margin: 40px;
+    color: #89a7b1;
+    border-bottom: 2px solid #89a7b1;
+}
+
+/*=======================cabeçalho=======================*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-bottom: 3px solid #cbdad5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #34344e;
+    font-size: 20px;
+}
+
+header p {
+    font-weight: 200;
+    color: #cbdad5;
+}
+
+#menu-web {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#menu-web a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #cbdad5;
+}
+
+#menu-web a:hover{
+    text-decoration: underline;
+    color: #89a7b1;
+}
+
+#botao-mobile{
+    display: none;
+}
+
+/*=========================seção inicial========================*/
+
+#inicio_divCentral{
+    display: flex;
+    width: 70%;
+    margin: 220px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicio_section div h1 {
+    font-size: 50px;
+    color: #cbdad5;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#inicio_section a {
+    font-size: 20px;
+    background-color: #89a7b1;
+    color: #34344e;
+    padding: 8px;
+    border: 2px solid #89a7b1;
+    border-radius: 10px;
+}
+
+#inicio_section a:hover {
+    background-color: #34344e;
+    border: 2px solid #89a7b1;
+    transition: .3s;
+    color: #cbdad5;
+}
+
+#inicio_section strong {
+    color: #89a7b1;
+
+}
+
+#inicio_section img {
+    width: 260px;
+    height: 260px;
+    border: 5px solid #cbdad5;
+    border-radius: 50%;
+
+}
+
+/*=========================seção sobre mim======================*/
+
+#sobremim_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 3px solid #cbdad5;
+    color: #cbdad5;
+    padding-top: 60px;
+
+}
+
+#sobremim_section p {
+    font-weight: 200;
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 35px;
+}
+
+#sobremim_section strong {
+    color: #89a7b1;
+}
+
+#sobremim_section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 35px;
+    
+}
+
+#sobremim_section img{
+    height: 110px;
+    
+}
+
+/*===================== seção projetos ===================*/
+
+#projetos_section {
+    border-top: 3px solid #cbdad5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+#projetos_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* div dos projetos*/
+
+.projetos_feitos {
+    background-color: #89a7b1;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    border: 3px solid #cbdad5;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos_feitos img:hover{
+    transform: scale(1.1);
+    transition: .4s ;
+}
+
+.projetos_feitos h3{
+    font-size: 25px;
+    color: #34344e;
+    padding-bottom: 10px; 
+}
+
+.projetos_feitos img{
+    width: 230px;
+    height: 230px;
+}
+
+.projetos_feitos p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*===================== seção contato ===================*/
+
+#contato_section{
+    border-top: 3px solid #cbdad5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#contato_section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 35px;
+    color: #cbdad5;
+}
+
+#contato_section p {
+    font-weight: 200;
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #cbdad5;
+}
+
+#contato_section a {
+    color: #cbdad5;
+
+}
+
+/*===================== footer ===================*/
+
+footer{
+    background-color: #89a7b1;
+    color: #34344e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 150px;
+}
+
+footer a{
+    color: #34344e;
+}
+
+footer h3{
+    font-size: 30px;
+}

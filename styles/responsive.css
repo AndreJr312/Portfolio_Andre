@@ -1,0 +1,146 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+    /*========================geral==========================*/
+
+    #sobremim_section,
+    #projetos_section,
+    #contato_section {
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin: 40px;
+        color: #89a7b1;
+        border-bottom: 2px solid #89a7b1;
+    }
+
+
+    /*=======================cabeçalho=======================*/
+
+   
+
+    #botao-mobile {
+        display: flex;
+        border: none;
+        color: #cbdad5;
+        font-size: 20px;
+        background-color: #34344e;
+        cursor: pointer;
+        gap: 15px;
+    }
+
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid #89a7b1;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        background: #89a7b1;
+        display: block;
+        width: 20px;
+        height: 2px;
+        content: '';
+        margin-top: 7px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #navegar.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #navegar.active #hamburguer::after{
+        transform: rotate(135deg);
+        top: -8px;
+    }
+
+    #navegar.active #hamburguer::before{
+        transform: rotate(-135deg);
+    }
+
+    #menu-web {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        right: 0px;
+        background-color: #34344e;
+        z-index: 1000;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #navegar.active #menu-web {
+        
+        height: calc(100vh - 60px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu-web li{
+        padding: 15px;
+        margin: 10px;
+        border-bottom: 2px solid #89a7b1;
+    }
+
+    #menu-web li:hover{
+        background-color: #34344e;
+        filter: brightness(1.2);
+        
+    }
+
+
+
+
+    /*=========================seção inicial========================*/
+
+
+    #inicio_divCentral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #inicio_section div h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    /*=========================seção sobre mim======================*/
+
+    #sobremim_section p {
+        font-size: 18px;
+    }
+
+
+    /*===================== seção projetos ===================*/
+
+    #projetos_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /*===================== seção contato ===================*/
+
+    #contato_section p {
+        font-size: 18px;
+    }
+
+    
+
+
+
+}
