@@ -195,6 +195,7 @@ header p {
 .projetos_feitos img{
     width: 230px;
     height: 230px;
+    border-radius: 10px;
 }
 
 .projetos_feitos p{
