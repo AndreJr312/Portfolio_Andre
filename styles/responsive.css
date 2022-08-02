@@ -13,8 +13,8 @@
     .titulo {
         font-size: 30px;
         margin: 40px;
-        color: #89a7b1;
-        border-bottom: 2px solid #89a7b1;
+        color: #FF7D00;
+        border-bottom: 2px solid #FF7D00;
     }
 
 
@@ -25,9 +25,9 @@
     #botao-mobile {
         display: flex;
         border: none;
-        color: #cbdad5;
+        color: #FFECD1;
         font-size: 20px;
-        background-color: #34344e;
+        background-color: #001524;
         cursor: pointer;
         gap: 15px;
     }
@@ -35,11 +35,11 @@
     #hamburguer{
         display: block;
         width: 20px;
-        border-top: 2px solid #89a7b1;
+        border-top: 2px solid #FFECD1;
     }
 
     #hamburguer::after, #hamburguer::before{
-        background: #89a7b1;
+        background: #FFECD1;
         display: block;
         width: 20px;
         height: 2px;
@@ -55,7 +55,7 @@
 
     #navegar.active #hamburguer::after{
         transform: rotate(135deg);
-        top: -8px;
+        top: -9px;
     }
 
     #navegar.active #hamburguer::before{
@@ -68,7 +68,7 @@
         width: 100%;
         top: 60px;
         right: 0px;
-        background-color: #34344e;
+        background-color: #001524;
         z-index: 1000;
         height: 0px;
         transition: .6s;
@@ -85,20 +85,17 @@
 
    
     #menu-web li:hover{
-        background-color: #34344e;
-        filter: brightness(1.2);
+        background-color: #001524;
+        filter: brightness(1.5);
         
     }
 
     #menu-web li a{
         display: inline-block;
         padding: 20px;
-        border-bottom: 2px solid #89a7b1;
+        border-bottom: 2px solid #FFECD1;
         width: 100%;
     }
-
-
-
 
     /*=========================seção inicial========================*/
 
@@ -115,7 +112,7 @@
     }
 
     #inicio_section div h1 {
-        font-size: 50px;
+        font-size: 30px;
         margin-bottom: 50px;
     }
 
@@ -123,7 +120,18 @@
     /*=========================seção sobre mim======================*/
 
     #sobremim_section p {
-        font-size: 18px;
+        font-size: 15px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    #sobremim_section div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        margin-bottom: 35px;
+        
     }
 
 
@@ -141,8 +149,39 @@
         font-size: 18px;
     }
 
-    
+    #contato_section div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        margin-bottom: 35px;
+        color: #FFECD1;
+    }
 
 
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+
+    #inicio_divCentral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #inicio_section div h1 {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+
+    #projetos_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
