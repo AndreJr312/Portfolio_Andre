@@ -183,6 +183,12 @@ header p {
     border: 3px solid #FFECD1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+.projetos_feitos img{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
 }
 
 .projetos_feitos img:hover{
@@ -194,12 +200,6 @@ header p {
     font-size: 25px;
     color: #001524;
     padding-bottom: 10px; 
-}
-
-.projetos_feitos img{
-    width: 230px;
-    height: 230px;
-    border-radius: 10px;
 }
 
 .projetos_feitos p{
