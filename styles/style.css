@@ -39,6 +39,7 @@ header {
     width: 100%;
     background-color: #001524;
     font-size: 20px;
+    z-index: 1;
 }
 
 header p {
@@ -92,14 +93,17 @@ header p {
     color: #FFECD1;
     padding: 8px;
     border: 2px solid #FFECD1;
+    transition: .2s;
     border-radius: 10px;
+    box-shadow: -5px 5px 1px #FFECD1, -6px 7px 5px black;
 }
 
 #inicio_section a:hover {
     background-color: #FFECD1;
     border: 2px solid #FFECD1;
-    transition: .3s;
+    transition: .4s;
     color: #001524;
+    box-shadow: 8px -8px 1px black;
 }
 
 #inicio_section strong {
@@ -183,17 +187,18 @@ header p {
     border: 3px solid #FFECD1;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    align-items: center;
 }
+
+.projetos_feitos:hover{
+    box-shadow: -5px 5px 1px #FFECD1, -6px 7px 5px black;
+    transition: .5s;
+}
+
 .projetos_feitos img{
     width: 230px;
     height: 230px;
     border-radius: 10px;
-}
-
-.projetos_feitos img:hover{
-    transform: scale(1.1);
-    transition: .4s ;
 }
 
 .projetos_feitos h3{
@@ -202,11 +207,14 @@ header p {
     padding-bottom: 10px; 
 }
 
-.projetos_feitos p{
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+.projetos_feitos a{
+
+    font-size: 20px;
+    margin-top: 25px;
+    background-color: #001524;
+    color: #FFECD1;
+    padding: 8px;
+    border-radius: 10px;    
 }
 
 /*===================== seção contato ===================*/
@@ -262,4 +270,21 @@ footer a{
 
 footer h3{
     font-size: 30px;
+}
+
+
+/*===================== animando sections ao scrolar tela ===================*/
+
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="up"]{
+    transform: translate3d(-100px, 0px, 0px);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
