@@ -103,7 +103,7 @@ header p {
     border: 2px solid #FFECD1;
     transition: .4s;
     color: #001524;
-    box-shadow: 8px -8px 1px black;
+    box-shadow: 6px -6px 1px black;
 }
 
 #inicio_section strong {
@@ -192,7 +192,7 @@ header p {
 
 .projetos_feitos:hover{
     box-shadow: -5px 5px 1px #FFECD1, -6px 7px 5px black;
-    transition: .5s;
+    transition: .2s;
 }
 
 .projetos_feitos img{
